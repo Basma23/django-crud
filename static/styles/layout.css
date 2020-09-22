@@ -1,0 +1,84 @@
+header h1{
+    color: #f5f5f5;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 0;
+}
+nav ul{
+    float: right;
+    margin: -38px 58px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #f5f5f5;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: #6d6c6c;
+}
+main h2{
+    color: #770081;
+    font-size: 50px;
+    font-weight: bolder;
+    margin: 50px 0;
+    text-align: center;
+}
+main h1{
+    color: #6d6c6c;
+    font-size: 35px;
+    font-weight: bolder;
+    float: right;
+    margin: 50px 428px 10px 0;
+}
+main ul{
+    float: right;
+    margin: 0 170px;
+}
+main ul li a{
+    border-left: 5px solid #6d6c6c;
+    color:#770081;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 2;
+    padding-left: 10px;
+    text-decoration: none;
+}
+main ul li a:hover{
+    color: #6d6c6c;
+}
+#footer p{
+    color: #f5f5f5;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+.div h3{
+    color: #770081;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px;
+}
+.div h4{
+    color: #464546;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 5px;
+}
+.div p{
+    color: #000000;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 5px 10px 10px 5px;
+}
+button a{
+    color: #770081;
+    cursor: pointer;
+}
+button a:hover{
+    color: #6d6c6c;
+    cursor: pointer;
+}

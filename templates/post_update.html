@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 id="tit">Update Blog</h1>
+<form id="form" action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button id="update" type="submit">Update</button>
+</form>
+<img id="img1" src="https://purple.ai/wp-content/uploads/2020/04/blogs-header.png" alt="">
+{% endblock content %}

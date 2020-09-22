@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/base.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/modules.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/reset.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>amman-code-python-401d1</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'postes' %}">Postes</a></li>
+                <li><a href="{% url 'post_create' %}">Create Postes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <footer id="footer">
+        <p>Django class &copy; 2020</p>
+    </footer>
+</body>
+
+</html>
