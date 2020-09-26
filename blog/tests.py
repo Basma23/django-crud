@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.contrib.auth import get_user_model
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from .models import Post
 
 # Create your tests here.
@@ -39,3 +39,7 @@ class BlogTest(TestCase):
         })
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'python')
+
+    def test_post_delete_view(self):
+        response = self.client.get(reverse_lazy('post_delete', args='1'))
+        self.assertRedirects(response, reverse_lazy('postes'), status_code=200)
